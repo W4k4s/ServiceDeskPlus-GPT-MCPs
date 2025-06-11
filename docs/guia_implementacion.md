@@ -11,12 +11,15 @@ Esta guía proporciona los pasos básicos para desplegar el microservicio que in
    cd ServiceDeskPlus-GPT-MCPs
    ```
 
-2. **Configura las variables de entorno**. Copia `.env.example` a `.env` y edita el nuevo archivo para añadir tu clave de API y la URL base de tu instancia de ServiceDesk Plus:
+2. **Configura las variables de entorno**. Copia `.env.example` a `.env` y completa los valores necesarios:
 
    ```bash
    cp .env.example .env
-   # Abre .env con tu editor favorito y rellena SDP_API_KEY y SDP_BASE_URL
    ```
+
+   - **Obtener la API Key**: ingresa en tu instancia de SDP con una cuenta de técnico, abre tu perfil (esquina superior derecha) y selecciona *Generate API Key*. Copia la cadena resultante.
+   - **Determinar la URL base**: usa la dirección con la que accedes a SDP (incluye `http(s)` y el puerto correspondiente). Por ejemplo `https://mi‑sdp:8443`.
+   - Edita `.env` e introduce los valores en `SDP_API_KEY` y `SDP_BASE_URL`.
 
 3. **Instala las dependencias**. Asegúrate de contar con Python 3.11 y [Poetry](https://python-poetry.org/) instalado. Después ejecuta:
 
