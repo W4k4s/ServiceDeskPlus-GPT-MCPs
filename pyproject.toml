@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "helpdesk-mcp"
+version = "0.1.0"
+description = "Microservicio para integrar ChatGPT con ServiceDesk Plus"
+authors = ["W4k4s <contact@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110"
+uvicorn = {extras = ["standard"], version = "^0.29"}
+requests = "^2.31"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

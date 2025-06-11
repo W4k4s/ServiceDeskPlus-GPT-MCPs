@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helpdesk-mcp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helpdesk-mcp
+  template:
+    metadata:
+      labels:
+        app: helpdesk-mcp
+    spec:
+      containers:
+      - name: mcp
+        image: helpdesk-mcp:latest
+        ports:
+        - containerPort: 8001
+        env:
+        - name: SDP_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: sdp-secrets
+              key: api-key
