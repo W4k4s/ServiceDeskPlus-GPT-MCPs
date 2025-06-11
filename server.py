@@ -1,6 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import os
+from sdp_client import ServiceDeskClient
 
 app = FastAPI(title="ServiceDesk Plus MCP")
 
@@ -43,9 +44,13 @@ async def assign_ticket(ticket_id: int, payload: TechnicianPayload):
 
 @app.post("/tickets")
 async def create_ticket(ticket: Ticket):
-    # Aquí se integraría la lógica para crear tickets en SDP
-    api_key = os.environ.get("SDP_API_KEY", "not-set")
-    return {"message": "Ticket recibido", "title": ticket.title, "api_key": api_key}
+    """Crea un ticket en ServiceDesk Plus utilizando la API v3."""
+    try:
+        client = ServiceDeskClient()
+        result = client.create_ticket(ticket.title, ticket.description)
+    except Exception as exc:  # pragma: no cover - errores inesperados
+        raise HTTPException(status_code=500, detail=str(exc))
+    return result
 
 if __name__ == "__main__":
     import uvicorn

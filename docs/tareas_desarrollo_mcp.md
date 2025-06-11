@@ -12,7 +12,7 @@ Esta lista sirve para realizar un seguimiento de las acciones necesarias para po
 - [x] Añadir las rutas para cerrar (`/tickets/{id}/close`) y asignar (`/tickets/{id}/assign`) tickets.
 
 ## 3. Integración y pruebas
-- [ ] Probar la conexión a SDP utilizando la API Key proporcionada.
+- [x] Probar la conexión a SDP utilizando la API Key proporcionada.
 - [x] Desarrollar pruebas unitarias y de integración (`tests/`).
 
 ## 4. Contenerización y despliegue

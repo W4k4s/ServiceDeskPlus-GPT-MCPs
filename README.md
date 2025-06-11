@@ -70,14 +70,14 @@ Este repositorio se mantiene como referencia del plan de integración. Los archi
 ## Ejecución local (opcional)
 
 1. Clonar este repositorio.
-2. Copiar `.env.example` a `.env` y completar `SDP_API_KEY`.
+2. Copiar `.env.example` a `.env` y completar `SDP_API_KEY` y `SDP_BASE_URL`.
 3. Instalar dependencias con `poetry install`.
 4. Ejecutar `python server.py` para iniciar el servicio en `http://localhost:8001`.
 5. Revisar los logs en consola o enviarlos a la plataforma de observabilidad configurada.
 
 ## Endpoints disponibles
 
-- `POST /tickets`: registra un nuevo ticket.
+- `POST /tickets`: crea un ticket real en ServiceDesk Plus.
 - `GET /tickets/{id}`: consulta un ticket existente.
 - `POST /tickets/{id}/close`: cierra un ticket.
 - `POST /tickets/{id}/assign`: asigna un ticket a un técnico.
