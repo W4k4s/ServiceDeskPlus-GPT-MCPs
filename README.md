@@ -74,6 +74,13 @@ Este repositorio se mantiene como referencia del plan de integración. Los archi
 4. Ejecutar `python server.py` para iniciar el servicio en `http://localhost:8001`.
 5. Revisar los logs en consola o enviarlos a la plataforma de observabilidad configurada.
 
+## Endpoints disponibles
+
+- `POST /tickets`: registra un nuevo ticket.
+- `GET /tickets/{id}`: consulta un ticket existente.
+- `POST /tickets/{id}/close`: cierra un ticket.
+- `POST /tickets/{id}/assign`: asigna un ticket a un técnico.
+
 ## Contribuir
 
 Revisa `CONTRIBUTING.md` y `CODE_OF_CONDUCT.md` antes de enviar cambios.
