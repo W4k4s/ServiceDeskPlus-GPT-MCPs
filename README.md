@@ -34,6 +34,9 @@ helpdesk-mcp/
     └── k8s-deployment.yaml
 ```
 
+La version inicial del proyecto ya incluye estos archivos junto con `.gitignore`, `LICENSE` y `CONTRIBUTING.md`. Utiliza el archivo `.env.example` como base para tus variables de entorno y ejecuta `poetry install` para preparar el entorno.
+
+
 ## Observabilidad
 
 - Logs enviados a Loki o Elastic.
@@ -68,5 +71,9 @@ Este repositorio se mantiene como referencia del plan de integración. Los archi
 3. Instalar dependencias con `poetry install`.
 4. Ejecutar `python server.py` para iniciar el servicio en `http://localhost:8001`.
 5. Revisar los logs en consola o enviarlos a la plataforma de observabilidad configurada.
+
+## Contribuir
+
+Revisa `CONTRIBUTING.md` y `CODE_OF_CONDUCT.md` antes de enviar cambios.
 
 

@@ -5,6 +5,10 @@ Este repositorio alberga macros (MCPs) para integrar ServiceDesk Plus On-Prem co
 ## Contenido
 - `Plan-integracion-helpdesk-mcp.pdf`: Documento con el plan de integración.
 - `README.md`: Breve descripción del proyecto.
+- `pyproject.toml`: dependencias gestionadas con Poetry.
+- `server.py`: punto de entrada del microservicio.
+- `infra/`: archivos para la imagen Docker y despliegue en Kubernetes.
+- `tests/`: pruebas unitarias y de integración.
 
 ## Cómo contribuir
 1. Agrega tus MCPs o scripts en español con los comentarios necesarios.
