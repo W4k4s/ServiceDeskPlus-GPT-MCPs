@@ -4,6 +4,7 @@ Integración de GPT con ServiceDesk Plus (SDP) mediante un microservicio de cont
 
 Este repositorio contiene el plan resumido para desarrollar y desplegar un microservicio que permita a modelos de OpenAI crear, consultar y actualizar tickets en SDP on‑prem. El documento original se encuentra en `Plan-integracion-helpdesk-mcp.pdf`.
 Para una guía paso a paso consulta `docs/plan_desarrollo_mcp.md`.
+Si deseas una introducción rápida a la puesta en marcha revisa `docs/guia_implementacion.md`.
 Revisa `docs/tareas_desarrollo_mcp.md` para un listado de tareas a completar.
 
 ## Objetivo
