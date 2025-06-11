@@ -7,13 +7,13 @@ Esta lista sirve para realizar un seguimiento de las acciones necesarias para po
 - [ ] Instalar dependencias con `poetry install`.
 
 ## 2. Implementación de funcionalidades básicas
-- [ ] Crear el endpoint `POST /tickets` para registrar nuevos tickets en SDP.
-- [ ] Implementar `GET /tickets/{id}` para consultar un ticket existente.
-- [ ] Añadir las rutas para cerrar (`/tickets/{id}/close`) y asignar (`/tickets/{id}/assign`) tickets.
+- [x] Crear el endpoint `POST /tickets` para registrar nuevos tickets en SDP.
+- [x] Implementar `GET /tickets/{id}` para consultar un ticket existente.
+- [x] Añadir las rutas para cerrar (`/tickets/{id}/close`) y asignar (`/tickets/{id}/assign`) tickets.
 
 ## 3. Integración y pruebas
 - [ ] Probar la conexión a SDP utilizando la API Key proporcionada.
-- [ ] Desarrollar pruebas unitarias y de integración (`tests/`).
+- [x] Desarrollar pruebas unitarias y de integración (`tests/`).
 
 ## 4. Contenerización y despliegue
 - [ ] Construir la imagen Docker del microservicio.
